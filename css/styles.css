@@ -1,0 +1,64 @@
+:root {
+  /*esto es como declarar una variable en CSS */
+  --blanco: #fff;
+  --morado: #633a9a;
+  --azul: #4b79c4;
+  --rojo: #aa2e32;
+  --gris: #b1b8b7;
+  --verde: rgb(39, 157, 114);
+  --fondo: rgb(0, 0, 0);
+
+  --fuente-principal: 3.8rem;
+}
+
+/* globales */
+html {
+  font-size: 62.5%; /* Hack para los rems para que funcionen siempre como queremos*/
+  box-sizing: border-box;
+  /* hasta aqui */
+}
+
+body {
+  background-color: var(--fondo);
+}
+main * {
+  padding: 1rem;
+  font-size: 3rem;
+  margin: 1rem;
+}
+header {
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+.hero {
+  background-color: var(--rojo);
+  color: var(--blanco);
+}
+
+.content {
+  background-color: var(--verde);
+  color: var(--blanco);
+}
+aside {
+  background-color: var(--morado);
+  color: var(--blanco);
+}
+footer {
+  background-color: var(--gris);
+  color: var(--blanco);
+}
+@media (min-width: 768px) {
+  .flex {
+    display: flex;
+  }
+  aside {
+    width: 100%;
+  }
+}
+.flex {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
+}
